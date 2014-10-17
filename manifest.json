@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "MAL Anime Add Helper",
+  "description": "This extension helps you add anime to your MAL list easier.",
+  "version": "1.0",
+
+  "content_scripts": [
+      {
+        "matches": ["http://*.anichart.net/*"],
+        "js": ["add.js"]
+      }
+    ],
+  "permissions": [
+    "tabs",
+    "http://*.anichart.net/*",
+    "http://*.myanimelist.net/*"
+  ]
+}
